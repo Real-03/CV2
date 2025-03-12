@@ -1,0 +1,30 @@
+{
+  "_resourceType": "scene",
+  "id": "b88241ff-c4d8-45a0-8be4-dd6fd8724dd2",
+  "_index": 9,
+  "name": "House",
+  "backgroundId": "dc891e04-8900-4d76-b726-838f225b8801",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "008c+0f!00!0f21+005+0ff+0016+0f!0013+0f!009+0f4+005+0f3+0010+0f5+007+0f4+005+0f3+0010+0f5+008+0f2+006+0f3+009+0f2+007+0f!002+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_1",
+  "x": 608,
+  "y": 168,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "872f61cf-bd62-4e58-92ee-a751e7335fe9"
+      },
+      "id": "52540c3a-378a-4518-8edd-b4294ab0679d"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

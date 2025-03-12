@@ -1,0 +1,31 @@
+{
+  "_resourceType": "scene",
+  "id": "c7dc286b-204c-4641-8bb5-488b3d5c884d",
+  "_index": 6,
+  "name": "Outside",
+  "backgroundId": "64484f82-b12c-4840-8265-62a84616f37a",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "002+0f4+008+0f2+005+0f!004+0f!005+0f2+002+0f2+002+0f!006+0f!003+0f!006+0f!00!0f!006+0f!003+0f!006+0f!00!0f!006+0f!003+0f!006+0f!00!0f!006+0f5+006+0f!00!0f3+002+0f3+003+0f3+002+0f3+003d+0f7+005+0f6+009+0f!003+0f!006+0f!008+0f!003+0f!006+0f!008+0f!003+0f!005+0f2+008+0f!003+0f!005+0f2+00!0f3+002+0f3+003+0f3+002+0f3+0029+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_10",
+  "x": 736,
+  "y": 368,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "872f61cf-bd62-4e58-92ee-a751e7335fe9"
+      },
+      "id": "5f59649d-9971-4fea-8c7d-e0d670df2381"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "10dabe4f-e9e4-4df6-87a9-82bf0888a38b"
+}

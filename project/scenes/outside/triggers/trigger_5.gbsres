@@ -1,73 +1,46 @@
 {
   "_resourceType": "trigger",
-  "id": "36c48333-f551-47df-9a37-9b62584b8894",
+  "id": "e50ac08e-a772-4b71-8b6d-32621c0986fa",
   "name": "",
   "prefabId": "",
-  "x": 11,
-  "y": 22,
-  "symbol": "trigger_12",
+  "x": 9,
+  "y": 26,
+  "symbol": "trigger_13",
   "prefabScriptOverrides": {},
   "width": 1,
   "height": 1,
   "script": [
     {
-      "command": "EVENT_IF",
+      "command": "EVENT_INC_VALUE",
       "args": {
-        "condition": {
-          "type": "ne",
-          "valueA": {
-            "type": "variable",
-            "value": "14"
-          },
-          "valueB": {
-            "type": "number",
-            "value": 1
-          }
-        },
-        "__collapseElse": true
+        "variable": "13"
       },
-      "children": {
-        "true": [
-          {
-            "command": "EVENT_SET_VALUE",
-            "args": {
-              "variable": "14",
-              "value": {
-                "type": "number",
-                "value": 1
-              }
-            },
-            "id": "e088ad2e-c944-4560-9b5b-48185fa67321"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "Concrete Mission"
-              ],
-              "__section": "text",
-              "avatarId": "",
-              "minHeight": 4,
-              "maxHeight": 7,
-              "textX": 1,
-              "textY": 1,
-              "textHeight": 5,
-              "position": "bottom",
-              "clearPrevious": true,
-              "showFrame": "true",
-              "speedIn": -1,
-              "speedOut": -1,
-              "closeWhen": "key",
-              "closeButton": "a",
-              "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
-            },
-            "id": "aaab3616-79c7-45d5-9eb1-e835f7d1ef8d"
-          }
+      "id": "9b017b98-8c08-43e8-8177-db67e743b30a"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "House mission \nBricks"
         ],
-        "false": []
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
       },
-      "id": "991ac256-4cca-4b42-a59c-7c28ac07b596"
+      "id": "5a180b8c-7831-496f-8da4-ed50360ae868"
     }
   ],
   "leaveScript": [],

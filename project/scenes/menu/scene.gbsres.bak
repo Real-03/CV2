@@ -9,7 +9,7 @@
   "y": 598,
   "width": 20,
   "height": 18,
-  "backgroundId": "b49ea566-b022-478c-979d-ec3ee255fdc5",
+  "backgroundId": "7f2b3a49-dd41-4bcc-95c8-ef3ceab7c9cc",
   "tilesetId": "",
   "paletteIds": [],
   "spritePaletteIds": [],
@@ -27,7 +27,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Set Checkboxes",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -210,30 +210,10 @@
           }
         ]
       }
-    },
-    {
-      "id": "caf988fd-46ba-4df4-87e3-afe81256c4cd",
-      "command": "EVENT_AWAIT_INPUT",
-      "args": {
-        "input": [
-          "a",
-          "b",
-          "start",
-          "select"
-        ],
-        "__collapse": false
-      }
-    },
-    {
-      "id": "6fa3eeb1-f945-4c8b-8a9f-664484b98857",
-      "command": "EVENT_SCENE_POP_STATE",
-      "args": {
-        "fadeSpeed": "2"
-      }
     }
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": ""
+  "collisions": "00168+"
 }

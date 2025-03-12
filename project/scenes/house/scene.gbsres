@@ -1,15 +1,15 @@
 {
   "_resourceType": "scene",
   "id": "1b7f9ffd-2bbb-470b-9189-c2ac435d2a55",
-  "_index": 1,
+  "_index": 0,
   "type": "TOPDOWN",
   "name": "House",
   "symbol": "scene_house",
-  "x": 288,
-  "y": 80,
+  "x": 1016,
+  "y": 408,
   "width": 20,
   "height": 18,
-  "backgroundId": "b340b9a2-2865-4e05-91c0-148846a693c8",
+  "backgroundId": "dc891e04-8900-4d76-b726-838f225b8801",
   "tilesetId": "",
   "paletteIds": [],
   "spritePaletteIds": [],
@@ -26,5 +26,6 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": "003d+0f12+002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f8+002+0f8+009+0f!002+0f!0010+0f4+008+"
+  "collisions": "008c+0f!00!0f21+005+0ff+0016+0f!0013+0f!009+0f4+005+0f3+0010+0f5+007+0f4+005+0f3+0010+0f5+008+0f2+006+0f3+009+0f2+007+0f!002+",
+  "playerSpriteSheetId": "10dabe4f-e9e4-4df6-87a9-82bf0888a38b"
 }

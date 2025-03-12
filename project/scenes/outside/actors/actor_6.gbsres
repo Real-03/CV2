@@ -1,17 +1,17 @@
 {
   "_resourceType": "actor",
-  "id": "a85c4ba5-9bc0-4daa-94bc-4ef68a690659",
+  "id": "5cf6eb6c-be62-4efc-9cbb-14a8efac21a8",
   "_index": 5,
-  "symbol": "actor_5",
+  "symbol": "actor_6",
   "prefabId": "",
   "name": "",
-  "x": 21,
-  "y": 24,
+  "x": 6,
+  "y": 18,
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "dfa75239-299d-41fe-a6cd-9e9438da1938",
+  "spriteSheetId": "311a855f-ce52-4d41-b25b-b991b60bc7c4",
   "paletteId": "",
-  "direction": "up",
+  "direction": "down",
   "moveSpeed": 1,
   "animSpeed": 15,
   "isPinned": false,
@@ -20,59 +20,53 @@
   "prefabScriptOverrides": {},
   "script": [
     {
-      "id": "81f7693e-8544-4bb2-bf47-b8963fe90982",
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "L0"
+      },
+      "id": "83ceb9c7-ceb2-4e23-ad5e-1b16a70f4e69"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "13"
+      },
+      "id": "f9feddcf-f2cd-4d9a-8dbd-865d7bb691af"
+    }
+  ],
+  "startScript": [
+    {
       "command": "EVENT_IF",
       "args": {
-        "variable": "1",
         "condition": {
-          "type": "variable",
-          "value": "1"
-        }
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": true
       },
       "children": {
         "true": [
           {
-            "id": "a991435c-89ad-4303-b6f0-a18054cc0ea7",
-            "command": "EVENT_TEXT",
+            "command": "EVENT_ACTOR_HIDE",
             "args": {
-              "text": "I guess it was a\nmisunderstanding."
-            }
-          },
-          {
-            "id": "be420a1a-743e-4afc-a997-daf721708b34",
-            "command": "EVENT_SET_VALUE",
-            "args": {
-              "variable": "8",
-              "value": {
-                "type": "true"
-              }
-            }
+              "actorId": "$self$"
+            },
+            "id": "21455302-09cd-4de2-b62b-3759605b91c6"
           }
         ],
-        "false": [
-          {
-            "id": "1063f8a8-90b7-4126-b6e4-1daf7c359c87",
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": "What is that guy\nlooking at?"
-            }
-          },
-          {
-            "id": "7a86534c-dd9f-4005-b2e7-c880ea3f9014",
-            "command": "EVENT_ACTOR_SET_DIRECTION",
-            "args": {
-              "actorId": "a85c4ba5-9bc0-4daa-94bc-4ef68a690659",
-              "direction": {
-                "type": "direction",
-                "value": "up"
-              }
-            }
-          }
-        ]
-      }
+        "false": []
+      },
+      "id": "9b10b20b-b2f3-4591-b615-9ff6ffadcf6f"
     }
   ],
-  "startScript": [],
   "updateScript": [],
   "hit1Script": [],
   "hit2Script": [],

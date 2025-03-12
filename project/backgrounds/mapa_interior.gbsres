@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "dc891e04-8900-4d76-b726-838f225b8801",
+  "name": "mapa_interior",
+  "symbol": "bg_mapa_interior",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "mapa_interior.png",
+  "tileColors": ""
+}

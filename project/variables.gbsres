@@ -95,6 +95,21 @@
       "id": "36c48333-f551-47df-9a37-9b62584b8894__L0",
       "name": "Local 0",
       "symbol": "var_local_1"
+    },
+    {
+      "id": "6198065b-6bf4-4732-a0d9-90561da58946__L0",
+      "name": "Local 0",
+      "symbol": "var_local_2"
+    },
+    {
+      "id": "15",
+      "name": "NewspaperMission",
+      "symbol": "var_newspapermission"
+    },
+    {
+      "id": "16",
+      "name": "StartMission",
+      "symbol": "var_startmission"
     }
   ]
 }

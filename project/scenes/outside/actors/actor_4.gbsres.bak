@@ -20,22 +20,20 @@
   "prefabScriptOverrides": {},
   "script": [
     {
-      "id": "137799a4-c0db-46dd-91c9-36c0e5386e3d",
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": "Have you seen my\ncat anywhere?"
-      }
-    },
-    {
-      "id": "ef31c786-4d05-4ec4-9828-0b20bea82a50",
       "command": "EVENT_IF",
       "args": {
-        "variable": "0",
-        "__collapseElse": true,
         "condition": {
-          "type": "variable",
-          "value": "0"
-        }
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L5"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
       },
       "children": {
         "true": [
@@ -43,22 +41,158 @@
             "id": "a36892fc-7718-4107-b5b5-07b6c5eea254",
             "command": "EVENT_TEXT",
             "args": {
-              "text": "He's by the house?\nThank you!"
+              "text": [
+                "You got the items?"
+              ]
             }
           },
           {
-            "id": "d63037fd-1207-4d62-a104-170f4c817eeb",
-            "command": "EVENT_SET_VALUE",
+            "command": "EVENT_CHOICE",
             "args": {
-              "variable": "4",
-              "value": {
-                "type": "true"
-              }
-            }
+              "variable": "L0",
+              "trueText": "Yes",
+              "falseText": "No"
+            },
+            "id": "9dbb3356-a840-43f8-a0be-dbe6d901d34b"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "13"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 3
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "d63037fd-1207-4d62-a104-170f4c817eeb",
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "4",
+                          "value": {
+                            "type": "true"
+                          }
+                        }
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Thank you!"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": false
+                        },
+                        "id": "0bdadc40-8701-4b27-94c6-e6d62c6abab9"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "You dont have all\nitems."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "da0aa591-44b4-4b23-a41e-5b5994d4a484"
+                      }
+                    ]
+                  },
+                  "id": "f925bb53-a935-4920-bde0-ee3394cba5af"
+                }
+              ],
+              "false": []
+            },
+            "id": "dd009f6b-9ea1-466f-8eb6-7c66a805a5ec"
           }
         ],
-        "false": []
-      }
+        "false": [
+          {
+            "id": "137799a4-c0db-46dd-91c9-36c0e5386e3d",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "I need a few \nthings to rebuild \nthe houses that ",
+                "were destroyed in \nthe war.",
+                "5 Wood\n5 Bricks\n5 Concrete"
+              ],
+              "avatarId": "",
+              "__collapse": true
+            }
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L5",
+              "value": {
+                "type": "number",
+                "value": 1
+              },
+              "__collapse": true
+            },
+            "id": "83cfea2e-30d8-49bb-b199-284af500829f"
+          }
+        ]
+      },
+      "id": "83b89924-b96c-4fdc-ab0a-7cb53df2b0ad"
     }
   ],
   "startScript": [],
