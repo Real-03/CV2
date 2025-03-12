@@ -1,0 +1,100 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "Seen Cat",
+      "symbol": ""
+    },
+    {
+      "id": "1",
+      "name": "Seen duck",
+      "symbol": ""
+    },
+    {
+      "id": "2",
+      "name": "Used Radio",
+      "symbol": ""
+    },
+    {
+      "id": "3",
+      "name": "Spoke To Space Dog",
+      "symbol": ""
+    },
+    {
+      "id": "4",
+      "name": "Quest1",
+      "symbol": ""
+    },
+    {
+      "id": "5",
+      "name": "Quest2",
+      "symbol": ""
+    },
+    {
+      "id": "6",
+      "name": "Quest3",
+      "symbol": ""
+    },
+    {
+      "id": "7",
+      "name": "Quest4",
+      "symbol": ""
+    },
+    {
+      "id": "8",
+      "name": "Quest5",
+      "symbol": ""
+    },
+    {
+      "id": "9",
+      "name": "Quest6",
+      "symbol": ""
+    },
+    {
+      "id": "10",
+      "name": "NewGame",
+      "symbol": ""
+    },
+    {
+      "id": "11",
+      "name": "SaveGame",
+      "symbol": ""
+    },
+    {
+      "id": "12",
+      "name": "PushedIceBlock",
+      "symbol": ""
+    },
+    {
+      "id": "13",
+      "name": "HouseMission",
+      "symbol": "var_housemission"
+    },
+    {
+      "id": "14",
+      "name": "CDMission",
+      "symbol": "var_cdmission"
+    },
+    {
+      "id": "6df125bb-df3d-4886-8251-643e548b276b__L0",
+      "name": "ReturnMainMenu",
+      "symbol": "var_returnmainmenu"
+    },
+    {
+      "id": "6c550b1a-7ae8-44b9-b5e8-c0a31c97574f__L0",
+      "name": "ReturnMainMenu",
+      "symbol": "var_returnmainmenu_0"
+    },
+    {
+      "id": "bc85d076-dd0b-4bfb-8b8b-c44b853f9d33__L0",
+      "name": "Local 0",
+      "symbol": "var_local_0"
+    },
+    {
+      "id": "36c48333-f551-47df-9a37-9b62584b8894__L0",
+      "name": "Local 0",
+      "symbol": "var_local_1"
+    }
+  ]
+}

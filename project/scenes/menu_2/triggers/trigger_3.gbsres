@@ -1,0 +1,127 @@
+{
+  "_resourceType": "trigger",
+  "id": "8b3670ca-9cbf-4cc1-a2dd-71d7badc6a2d",
+  "name": "",
+  "prefabId": "",
+  "x": 2,
+  "y": 8,
+  "symbol": "trigger_8",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "b",
+          "start",
+          "up",
+          "down",
+          "a"
+        ],
+        "__collapse": false
+      },
+      "id": "950bd293-3f6b-4ddd-a454-bd1cae623970"
+    },
+    {
+      "command": "EVENT_IF_INPUT",
+      "args": {
+        "input": [
+          "up"
+        ],
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 5
+              }
+            },
+            "id": "efbccbef-507c-49c3-836f-c9e38954e9d6"
+          }
+        ],
+        "false": []
+      },
+      "id": "8ef22b32-01fe-4c75-b5d6-e5308417b0f4"
+    },
+    {
+      "command": "EVENT_IF_INPUT",
+      "args": {
+        "input": [
+          "down"
+        ],
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              }
+            },
+            "id": "38c17709-a504-472f-a950-8ce9acab5efb"
+          }
+        ],
+        "false": []
+      },
+      "id": "f1078a81-b133-4b35-ab66-85e6263bb98d"
+    },
+    {
+      "command": "EVENT_IF_INPUT",
+      "args": {
+        "input": [
+          "b",
+          "start",
+          "a"
+        ],
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "fd223a5f-7148-4705-98a7-b0ef56cb5c74",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 1
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "e928162a-bf7a-4315-9efb-d9e0e9714c90"
+          }
+        ],
+        "false": []
+      },
+      "id": "5d378dc4-36c5-4643-b79b-6b4302556f9a"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 2
+}

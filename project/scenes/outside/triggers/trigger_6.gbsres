@@ -1,0 +1,48 @@
+{
+  "_resourceType": "trigger",
+  "id": "e50ac08e-a772-4b71-8b6d-32621c0986fa",
+  "name": "",
+  "prefabId": "",
+  "x": 9,
+  "y": 26,
+  "symbol": "trigger_13",
+  "prefabScriptOverrides": {},
+  "width": 1,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "13"
+      },
+      "id": "9b017b98-8c08-43e8-8177-db67e743b30a"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "House mission \nBricks"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "5a180b8c-7831-496f-8da4-ed50360ae868"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 5
+}

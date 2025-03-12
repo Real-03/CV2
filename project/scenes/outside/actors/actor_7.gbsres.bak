@@ -1,0 +1,71 @@
+{
+  "_resourceType": "actor",
+  "id": "5cf6eb6c-be62-4efc-9cbb-14a8efac21a8",
+  "_index": 6,
+  "symbol": "actor_6",
+  "prefabId": "",
+  "name": "",
+  "x": 6,
+  "y": 18,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "311a855f-ce52-4d41-b25b-b991b60bc7c4",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "b1c3d75d-d579-47af-8f3e-4cd96178fbb0",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "Check out this\nsweet duck!"
+      }
+    },
+    {
+      "id": "0830a973-dd64-44ad-ad07-a677a31a27aa",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "true"
+        }
+      }
+    },
+    {
+      "id": "8ffac2a0-a735-40f1-b51e-dd270cc09ba9",
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "5cf6eb6c-be62-4efc-9cbb-14a8efac21a8",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      }
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_PALETTE_SET_SPRITE",
+      "args": {
+        "palette0": "",
+        "palette1": "keep",
+        "palette2": "keep",
+        "palette3": "",
+        "palette4": "",
+        "palette5": "",
+        "palette6": "",
+        "palette7": ""
+      },
+      "id": "1e58d495-808d-43d4-b512-4a9790972c15"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}
